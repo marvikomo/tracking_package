@@ -20,6 +20,6 @@ import {validate, generate_token, log_progress} from "./middleware/validator"
  * Tracking Routes
  */
  router.post("/log-progress", validate(log_progress), checkJwt, TrackingHistory.logProgress)
- router.get("/track/:tracking_id",checkJwt, TrackingHistory.trackPackage)
+ router.get("/track/:tracking_id",checkJwt, TrackingHistory.packageStatusHisrory)
 
  export default router;

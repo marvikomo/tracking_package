@@ -53,7 +53,7 @@ export class TrackingHistory {
     }
   };
 
-  static trackPackage = async (req: Request, res: Response) => {
+  static packageStatusHisrory = async (req: Request, res: Response) => {
     try {
       let tracking_id = req.params.tracking_id;
       let result = await PackageService.find({
